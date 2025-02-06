@@ -31,13 +31,13 @@ This project demonstrates how to build an **AI-powered chatbot** using **Azure A
 
 ```bash
 pip install azure-ai-projects azure-identity gradio python-dotenv
-
-2️⃣ Clone the Repository
+```
+## 2️⃣ Clone the Repository
 
 git clone https://github.com/yourusername/azure-ai-nasa-mars.git
 cd azure-ai-nasa-mars
 
-3️⃣ Set Up Environment Variables
+## 3️⃣ Set Up Environment Variables
 
 Create a .env file in the project root and add:
 
@@ -50,7 +50,7 @@ MODEL_DEPLOYMENT_NAME="gpt-4o"
 	•	BING_CONNECTION_NAME: After setting up a Bing search connection in Azure AI Agent.
 	•	MODEL_DEPLOYMENT_NAME: Your deployed model (default is gpt-4o).
 
-4️⃣ Add NASA Documents
+## 4️⃣ Add NASA Documents
 
 Create a folder nasa-data/ and place at least one .txt or .pdf file with public NASA Mars data (e.g., Perseverance Rover Mission Summary).
 
@@ -61,7 +61,7 @@ echo "NASA's Perseverance Rover landed on Mars on February 18, 2021, to search f
 
 🚀 Running the Chatbot
 
-1️⃣ Run the Jupyter Notebook
+## 1️⃣ Run the Jupyter Notebook
 
 Launch Jupyter and open nasa_mars_agent_demo.ipynb:
 
@@ -71,7 +71,7 @@ jupyter notebook nasa_mars_agent_demo.ipynb
 	•	Creates a vector store for document search.
 	•	Starts a Gradio chat interface.
 
-2️⃣ Run as a Standalone Python App
+## 2️⃣ Run as a Standalone Python App
 
 Alternatively, convert the notebook to a Python script and run it:
 
@@ -84,26 +84,19 @@ python nasa_mars_agent_demo.py
 2️⃣ Wait for the response (the AI will search local docs & Bing if needed)
 3️⃣ Interact with additional features (e.g., “When is the next NASA rocket launch?”)
 
-📸 Screenshots
 
-🎥 Coming Soon: Demo Video
 
-🌐 Deploying to Azure
-
-Want to deploy this bot to Azure Web Apps or GitHub Codespaces?
-Check out our deployment guide (coming soon).
-
-❌ Cleanup (Optional)
+## ❌ Cleanup (Optional)
 
 If you want to delete all created Azure resources, run:
 
-# Uncomment and run in Jupyter Notebook
+```Uncomment and run in Jupyter Notebook```
 
-# project_client.agents.delete_agent(agent.id)
-# project_client.agents.delete_thread(thread.id)
-# project_client.agents.delete_vector_store(vector_store_id)
+```project_client.agents.delete_agent(agent.id)```
+```project_client.agents.delete_thread(thread.id)```
+```project_client.agents.delete_vector_store(vector_store_id)```
 
-🤝 Contributing
+## 🤝 Contributing
 
 🚀 Want to improve this chatbot? PRs are welcome!
 	1.	Fork the repo
@@ -112,11 +105,11 @@ If you want to delete all created Azure resources, run:
 	4.	Push to branch (git push origin my-feature)
 	5.	Create a Pull Request
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
-💡 Acknowledgments
+## 💡 Acknowledgments
 	•	NASA Open Data (nasa.gov/open-data)
 	•	Microsoft Azure AI (azure.com/ai)
 	•	OpenAI GPT models (openai.com)
